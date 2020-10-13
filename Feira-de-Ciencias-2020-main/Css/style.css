@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* div ,#video{
+    border: 1px solid;
+} */
+
+/* Titulo */
+
+#titulo{
+    height: 150px;
+    width: 100%;   
+}
+
+#titulo ul{
+    line-height: 50px;
+    list-style: none;
+    text-align: center;
+    margin:20px auto;
+}
+
+#titulo h1{
+    text-transform: uppercase;
+}
+
+#nome-do-projeto{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+/* Main */
+#col-main{
+    position: relative;
+}
+
+/* Carousel */
+
+.carousel-item img{
+    height: 400px;
+}
+
+/* Vídeo */
+
+#video{
+    margin: 20px auto;
+    text-align: center;
+}
+
+#video video{
+    height: 90%;
+    width: 100%;
+}
+
+/* Links */
+
+#col-left ul,#col-right ul,#col-left-hidden ul,#col-right-hidden ul{
+    margin: 30px auto;
+    text-align: center;
+    list-style: none;
+}
+
+#col-left ul li,#col-right ul li, #col-left-hidden ul li,#col-right-hidden ul li{
+    padding: 10px 0;
+}
+
+#col-left-hidden{
+    display: none;
+}
+
+#col-right-hidden{
+    display: none;
+}
+
+/* Descrição */
+
+#descricao{
+    width: 95%;
+    text-align: justify;
+    margin: 30px auto;
+    padding: 10px;
+    position: static;
+}
+
+/* Card - quiz */
+
+.card{
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card-body p{
+    margin: 20px 0 5px 0;
+}
+#icon-card{
+    width: 90px;
+    height: 90px;
+    margin-top: -10px;
+}
+
+#btn-id{
+    margin: 20px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+/* Responsividade */
+
+@media(max-width: 577px){
+    #video video{
+        width: 350px;
+        height: 250px;
+    }
+    #col-left,#col-right{
+        display: none;
+    }
+    #col-left-hidden,#col-right-hidden{
+        display: flex;
+    }
+    #col-left-hidden{
+        width: 94%;
+        margin: auto;
+    }
+    .carousel-item img{
+        height: 250px;
+    }
+}
